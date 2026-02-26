@@ -57,10 +57,23 @@ Som förklarat i föregående fråga, så är funktioner i sig ett hjälpmedel f
 7. Förklara begreppet parameter jämfört med argument Python.
 
 Svar: 
+Parametrar och argument används i samband med att man passar information till en funktion. Parameter är en variabel som satts inom parentesen i funktionens definition, agerar placeholder för de kommande värdet (argument). Argument är värdet som satts för att kalla på funktionen. Dessa värden ersätter parametrar som definierats inom funktionen.
 
 8. Titta på följande video om R: R Programming. Vad är skillnaden mellan R och Python?
+R Programming
 
-Svar: 
+Svar:
+    • Egna tankar:
+Jag har stött på R en gång tidigare, i försök att reparera skador som skett i ett Power BI arbete, tidigare kurs. Det var intressant att få se mer av språket. Vad jag tänker efter att ha sett videon är att det ser väldigt likt ut, jämfört med Python. Liknande struktur i koder, som loopar och ifsatser, funktioner m.m. Även variabler är liknande. Syntax skiljer sig något men det upplevs inte så långt ifrån varandra. Jag tyckte mig se R som någon blanding av SQL och Python (andra språk är ofta mycket mer annorlunda utformat). Det verkade även som att det var ett långsammare språk, kan möjligtvis förklaras om det är så att R jobbar mer med den lokala prestandan och minnet, till skillnad från Python som ofta brukar snabba bibliotek som skrivits i snabbare språk, exempelvis inom C-språken. Dock förstår jag att även R brukar bibliotek, men vad dom är skriva i vet jag ej. Kanske är det så, kanske inte. Videon var mycket sevärd och jag har laddat ner materialet som presenterades, för att själv ”leka” runt lite. Extra bonus poäng för att fått se C-3PO och R2-D2’s BMI ^^
+
+Men för att utveckla jämförelsen lite bättre och främst för egen skull, så har jag googlat mer konkreta skillnader.
+    • Vad jag får fram:
+Python: Stykor – lättläst samt lättlärd syntax. Ett språk som ofta används i samband då man kombinerar dataanalys med större system/produktionsmiljöer med typiska användningsområden som maskininlärning i skalbar miljö, dataanalys kopplad till applikationer och/eller API:er, integration i större mjukvaroprojekt. Exempel kan vara ansiktsigenkänning i mobilapp eller att utveckla ML-modeller som ska köras i produktion.
+R: Starkt fokus på statistik, statistiska modeller, specialiserad analys och visualiseringar. Det verkar uppskattas i arbete som innefattar kundbeteendeanalyser, biostatistik och genforskning.
+Informationen är hämtad från IBM (verkade inte nödvändigt med källförteckning och fotnot här).
+
+    • Ytterligare egna tankar:
+Efter jämförelsen som tänker jag nog ändå att de har liknande funktionalitet, speciellt efter arbete med statistik och ML i python kurserna. R verkar vara mer specificerat riktat mot den vetenskapliga världen och data-science. Det verkar vara betydligt lägre andel programmerare med R kunskaper i nu jämfört med förr, kanske eftersom Python stigit i populäritet på senare tid. Skulle tro att det dels beror på att det är ett lättillängligt språk att lära sig, det finns otaligt material att komma åt gratis, speciellt efter AI’s framsteg men också eftersom jag ser utbildningar i skolor, även från lägre åldrar. Men det finns nog en hel del system där ute som fortfarande kör i R. Intressant ämne, helt klart!
 
 9. Kalle ska bygga en ML-modell och delar upp sin data i ”Träning”, ”Validering” och ”Test”, vad används respektive del för?
 
