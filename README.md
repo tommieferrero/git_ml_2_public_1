@@ -119,19 +119,36 @@ K-means är den vanligaste modellen inom ML för klustring. Modellen kan hantera
 16. Förklara (gärna med ett exempel): Ordinal encoding, one-hot encoding, dummy variable encoding.
 
 Svar: 
+    • Ordinal encoding
+Används för ordinal data. Kategorier byts ut mot siffror som följer en ordning. Ex. ”liten” blir 1, ”medium” 2 och ”stor” blir 3. På detta sätt kan vi lära modeller att förstå att 3 är större än 1, alltså ”stor” är större/mer/högre än ”liten”/”mellan”.
+    • One-hot encoding:
+Även detta är en metod för hantering av nominl data. Här skapar vi en ny kolumn för varje kategori och sätter en 1’a eller 0’a. Exempel på användning är att skapa kolumner ”is_red” och ”is_white”. Meningen med detta är kortfattat att en modell inte ska få för sig att det finns en rangordning som sedan misstolkas och stör målet vi är ute efter. Exempelvis så är det rimligt att utesluta att färgen på en bil ska ha någon större påverkan av predikterat värde, det finns andra faktorer/features som passar bättre i detta sammanhang. Som att prediktera bilpriser med hjälp av miltal, årsmodell, modell etc. snarare än att färg skulle göra några betydande skillnader i helheten.
+    • Dummy variabel:
+Mycket lik funktion som one-hot encoding. Men istället tas kolumn bort för att undvika dubbel information (”dummy trap”). Om en rad inte är röd och inte vit, så vet vi automatiskt att den måste vara den tredje färgen, om det finns 3 alternativ. Kort sagt, för spara utrymme.
 
 17. Göran påstår att datan antingen är ”ordinal” eller ”nominal”. Julia säger att detta måste tolkas. Hon ger ett exempel med att färger såsom {röd, grön, blå} generellt sett inte har någon inbördes ordning (nominal) men om du har en röd skjorta så är du vackrast på festen (ordinal) – vem har rätt?
 
 Svar: 
+Julia, med definitionen att ja, färgerna generellt saknar innebördes ordning (nominal), men om vi vet att röda skjortor är mer eftertraktat, polulärt etc. kanske beroendes på att det är svårare att få tag på eller i relation till någon form av event, jag då sticker röd ifrån den nominala datan och blir ordinal. Inom ML behöver den som genomför modelleringen själv göra valet, vilket är en del av konster och faller inom så kallad domän-kunskap. De andra färgerna i detta sammanhang fortsätter då att vara nominal och röd plockas ut, eftersom det ”beror på” just här, så det är inte alltid strikt det ena eller det andra.
 
 18. Vad är skillnaden mellan parametrar och hyperparametrar i en maskininlärningsmodell? Ge ett exempel på varje och förklara varför de inte kan optimeras på samma sätt.
 
 Svar: 
+    • Parameter – ”vad vi lärt oss” (lärs från data)
+Koefficienter i linjär regression eller geature importance i träd. D.v.s. värden som modellen lär sig under träning.
+    • Hyperparameter – ”hur vi lär oss”. (anges före träning)
+Inställningar som man väljer innan träningen. Detta är inställningar som styr modellens inlärning eller struktur.
+
+Dessa har olika roll i ML-flödet. Exempelvis så definerar paremeters modellens struktur och prestanda och hyperparemetrarna kontrollerar inlärningsprocessen. De svarar på olika frågor, ena före, adnra efter.
 
 19. Förklara skillnaden mellan overfitting och underfitting i en maskininlärningsmodell. Beskriv även hur man kan upptäcka respektive åtgärda dem.
 
 Svar: 
+    • Overfitting:
+Overfitting/överanpassning är något som sker när en modell har studerat träningsdatan för bra och lärt sig alla svar utantill, istället för att förstå mönstret. Modellen ”förstår” inte hur och kommer på så sätt misslyckas att prediktera på ny osedd data. Upptäcks om en modell får fantastiska resultat på träningsdatan men dåliga på ny data eller testdatan. Fungerar alltså bara på det som den sett. Kan åtgärdas genom exempelvis mindre komplex modell, rensa brus i data och/eller använda regularisering (L1/L2).
 
+    • Underfitting:
+Motsatsen, underfitting/underanpassning uppstår på en modell som är för enkel och presterar dåligt både på tränings- och testdata, eftersomden inte lyckats lära sig de grundläggande mönster som krävs. Upptäcks om en modell presterar riktigt dåligt på både tränings- och valideringsdata. Kan åtgärdas genom ex. att lägga till mer features, träna den längre, fler iterationer, eller öka modellens komplexitet.
 
 Du ska även genomföra en självutvärdering där du besvarar följande tre frågor:
 
