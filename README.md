@@ -1,5 +1,5 @@
 Tommie Ferrero Linderoth
-Inlämningsdatum 26-02-26
+Inlämningsdatum 26-02-27
 YH Akademin
 BI25M Machine Learning
 Inlämningsuppgift: Kunskapskontroll 2 – Teoretiska frågor
@@ -154,11 +154,18 @@ Du ska även genomföra en självutvärdering där du besvarar följande tre fr�
 
 1. Har något varit utmanande i kursen/kunskapskontrollerna? Om ja, hur har du hanterat det?
 Svar:
-
+Det måste jag svara ja på. Dels i starten av kursen, det var många nya, djupa koncept att försöka begripa inom ML. Men det blev mer och mer begripligt med tiden eftersom jag har använt alla möjliga tänkbara resurser på nätet, utöver själva undervisningarna och litteraturen. En annan utmaning var efter de kapitel som vi fått till oss i PDF form tog slut och böckerna ej kommit fram, p.g.a. den långa leveranstiden, men den stressen gav sig ganska fort när man väl hade materialet i handen. Där vill jag även slå ett slag, gällande böckerna. Jag har studerat programmering tidigare, även Python, och haft olika litteratur och läromaterial för detta, men inget har varit så begripligt utformat som i dessa 2 böcker. I tidigare material har jag fått lära mig något och sedan själv fått försöka konvertera detta till något annat tänkbar, det behövde man inte här eftersom det går på med både en välgrundan beskrivning och ger exempel på kod som faktiskt används direkt och endast kräver justeringar snarare än att man ska gissa sig fram till vad man ska ha saker och ting till. Gällande kunskapskontrollerna så tycker jag att del 1 fungerade mycket väl tillsammans med min grupp. Del 2 var mycket mer utmanande men samtidigt med begripligt eftersom vi är i slutet av kursen och man fått med sig så himla mycket kunskaper och erfarenheter inom ML, trots den relativt korta tiden som gått. Det mest utmanande som jag kan tänka är kanske att jag har haft stora problem med min dator, det har inte med kursen att göra, men det har gjort att jag behövt sitta själv och arbeta då det inte fungerat att arbete tillsammans med något eftersom den crashar ständigt och jag inte har tid att lämna in den på servicen p.g.a. uppgifter. Med andra ord hade jag kanske kunnat spara en del tid på felsökning och få hjälp i problem som uppstått, men det har löst sig ganska bra ändå tycker jag. Jag har en klar notebook och streamlit app, det är ganska basic som jag förstår det och hade kunnat bli bättre med lite mer arbete, men nu är det slutet och jag få nöja mig. Fortsätter lite om det i fråga 2.
 
 2. Vilket betyg anser du att du ska ha och varför?
 Svar:
-
+Jag tror mig ligga över G då jag utfört det som efterfrågats för VG. Jag har aktivt deltagit i lektioner, gruppdiskussioner och i grupparbetet. Med undantag de sista veckorna då jag haft problematiken med min dator. Jag har dock kunnat studera med hjälp av materialet, övningsuppgifter, inspelade lektioner och böckerna. Jag är inte säker på om jag når VG gällande streamlit appen. Jag har arbetet så väl jag kan med min notebook och jag är ganska nöjd över det arbetet. Men gällande streamlit appen så är den hastigt ihop kastad med hjälp av AI. Jag önskar att jag hade kunnat få lite mer av den egna touchen i koden men jag har bara fått ”AI’a” mig fram tills jag hade en .py app som fungerade och det fick jag. Om det är nog för VG vet jag ej men jag har gjort vad jag kan för att försöka nå det betyget.
 
 3. Något du vill lyfta fram till Terese?
 Svar:
+Som student som har pluggat en hel del i livet så vill jag tackar för alla lektioner, det har varit riktigt lärorikt. Du har lyckats svara bra på frågor, både från mig och andra i klassen, jag vad upplever. Man kan inte svara på alla frågor direkt och alltid, det förstår jag, men till skillnad från flertalet tidigare lärare vi har haft så tar du med dig frågorna och återkommer faktiskt med svar och det är bra förklarande svar. Toppen. Gällande böckerna så tänkte jag faktiskt att hoppa över att skaffa Python-boken eftersom jag studerat Python tidigare och hade en hel del material för detta. Men jag ångrar inte en sekund, som jag skrev tidigare så är dessas böcker fantastiskt välgjorda och tillsammans med YouTube-kanalen, lektioner och övningsuppgifterna så har jag lyckats lära mig otroligt mycket på kort tid och allt har snabbt blivit mer och mer begripligt. Det blir mina böcker att ha med mig in i arbetslivet, helt klart!
+
+
+Notis:
+Jag har som sagt haft väldigt problem med crashande dator och tvingats svara om på frågor flertalet gånger då jag inte hunnit spara varje minut. Jag har därför skippat att kolla över mitt dokument för att se grammatik, struktur etc. Jag känner mig nöjd med mina svar.
+
+Är det så att något saknas i mitt kompletta kunskapstest för att uppnå något betyg, så önskar jag få en chansa till komplettering om det är möjligt. I övrigt så tackar jag för denna kursen!
