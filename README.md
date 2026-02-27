@@ -78,30 +78,43 @@ Efter jämförelsen som tänker jag nog ändå att de har liknande funktionalite
 9. Kalle ska bygga en ML-modell och delar upp sin data i ”Träning”, ”Validering” och ”Test”, vad används respektive del för?
 
 Svar: 
+Inom ML så tränar vi upp modeller för, som i våra arbeten under kursen, lära den att prediktera exempelvis värden eller identifiering av bilder, generaliseringsförmåga. Vi tar ett dataset och delar upp det i 3 delar. En delning kan ske genom ex. Träning/Validering/Test – 80/10/10, 60/20/20 eller på annat vis dela upp datat, beroende på vad man har, hur mycket och vad man vill åstadkomma etc.
+    • Träningsdata:
+Träningsdatan är rimligt den största delen data i delningen. Detta är den del av datat som modeller från träna in sig på, hitta sammanhang/mönster o.s.v.
+    • Valideringsdata:
+Valideringsdatan blir den del som modellerna sedan utvärderas mot. Här kan vi få fram ett resultat av hur väl en given modell ex. predikterat ett pris på något, baserat på vad den lärt sig i träningsdatat.
+    • Testdata:
+Testdatat blir den data som modellen sedan testas mot, som ny osedd data. Så live vi kan komma fram tills ny data är åtkomlig. Innan detta tränas modellen om med både tränings- och valideringsdata, för att ytterligare lära den och ge den en större chans att gissa bra mot testdatat. En kritisk notis är att modellen aldrig får tränas på testdatat innan den är klar. Detta kallas dataleakage och gör att modellen ser själva sluttestet, lär sig mönster i det och troligtvis blir mycket dålig på senare ny osedd data.
 
 10. Julia delar upp sin data i träning och test. På träningsdatan så tränar hon tre modeller; ”Linjär Regression”, ”Lasso regression” och en ”Random Forest modell”. Hur skall hon välja vilken av de tre modellerna hon skall fortsätta använda när hon inte skapat ett explicit ”valideringsdataset”?
 
 Svar: 
+Hon kan använda träningsdatan i k-delad kors-validerings, där datan delas i ”folds” där modellerna tränas på alla folds utom en, vilken blir använd som test. Efter varje omgång beräknas felmått med ex. RMSE, MAE eller R^2. Därefter kan man få felvärden som medelberäknas, vars genomsnitt då bli modellens CV-prestanda. Modell med lägsta fel, eller högsta om R^2 används, blir dem som man får anse prestera bäst och bli valet att gå vidare med i ML-flödet.
 
 11. Vad är ”regressionsproblem? Kan du ge några exempel på modeller som används och potentiella tillämpningsområden?
 
 Svar: 
+Regression handlar om att förutsäga ett kontinuerligt numeriskt värde, beroende variabel (y), med hjälp av oberoende variabler (x). Att lära relation mellan indatafunktionerna och det kontinuerliga utmatningsmålet, med hjälp av någon mängd data som ML-algoritmer studerar för att finna mönster och sammanhang. Exempel på användsningsområden är prediktering av bostadspriser, bilvärdering, temperaturdiagnoser och att försöka förutsäga en persons lön (y) relaterat till ålder (x). Några vanliga modeller inom dessa områden är bla.a. linjär, ridge- och lasso regression. Andra exempel är beslutsträd, random forrest och ensemble learning.
 
 12. Hur kan du tolka RMSE och vad används det till.
 
 Svar: 
+Måttet RMSE används till att visa hur långt ifrån rätt en prediktion är, inom ML-regressionsmodeller. Med detta kan vi tolka fel och därmed rangordna modeller som tränats för att hitta den som passar bäst för datat och målet.
 
 13. Vad är ”klassificieringsproblem? Kan du ge några exempel på modeller som används och potentiella tillämpningsområden?
 
 Svar: 
+Till skillnad från regressionsproblem och prediktering av koninuerlig utdata med hjälp av indata så handlar klassificeringsproblem inom ML prediktering av kategorisk utdata (data som kan anta 2+ klasser) med hjälp av indata. Används inom bla.a. bildigenkänning, riskanalyser, kundanalys och inom sjukvård. Några exempel på modeller inom detta är bla.a. decision tree, random forest, support vector machine (SVM) och logistisk regression.
 
 14. Vad är en ”Confusion Matrix”?
 
 Svar: 
+En matris som ger en sammanfattning av förutsägelseresultat, visar antalet korrekta och felaktiga förutsägelser vilket hjälper till med förståelse över klassificeringsmodellens prestanda. Exempelvis som i vår uppgift om att prediktera en handskriven siffra baserat på inmatade, nya, handskrivna siffror. Matrisen kan ge en överblick på ex. hur många gånger den gissade att en 9’a var en 8’a, under sin tränings-del. Detta ger oss möjligheter att se styrkor och svagheter hos modellen.
 
 15. Vad är K-means modellen för något? Ge ett exempel på vad det kan tillämpas på.
 
 Svar: 
+K-means är den vanligaste modellen inom ML för klustring. Modellen kan hantera stora dataset tack vare att den är snabb och skalbar. Med clustering så grupperas liknande datapunkter i kluster utan behov av labeled data och kan på så sätt finna dolda mönster då målet är organisering av data baserat på likhet. Gruppering av punkter baserat på avstånd till klustercentrum, hjälper till att hitta naturliga grupperingar i unlabeled data. Exempel på tillämning är anomalidetektion. Företag kan använda detta för att, inom tillverkningsprocesser, upptäcka defekta produkter. Annat exempel är att upptäcka avvikande transaktioner för att sedan manuellt kunna granska dessa och på så sätt identifiera möjliga bedrägerier/brott.
 
 16. Förklara (gärna med ett exempel): Ordinal encoding, one-hot encoding, dummy variable encoding.
 
